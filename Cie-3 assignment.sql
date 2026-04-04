@@ -1,5 +1,3 @@
-
-
 CREATE DATABASE cie3;
 USE cie3;
 
@@ -92,3 +90,14 @@ INSERT INTO accounts VALUES (101, 'Rahul', 5000);
 INSERT INTO transactions VALUES (1, 101, 500, 'Deposit',2300);
 
 INSERT INTO transactions VALUES (2, 101, 200, 'Withdraw', 1000);
+
+SELECT * FROM accounts
+SELECT * FROM transactions;
+SELECT * FROM logs;
+SELECT balance FROM accounts WHERE account_id = 101;
+INSERT INTO transactions VALUES (3, 101, 10000, 'Withdraw', NOW());
+INSERT INTO transactions VALUES (1, 101, 500, 'Deposit', NOW());
+INSERT INTO transactions VALUES (2, 101, 200, 'Withdraw', NOW());
+SELECT * FROM accounts;
+SELECT * FROM transactions;
+SELECT * FROM logs;
